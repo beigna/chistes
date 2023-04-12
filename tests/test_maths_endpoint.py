@@ -11,9 +11,9 @@ def cli():
 
 
 @pytest.mark.parametrize('numbers,result', [
-    ([72, 50], 1800),
-    ([2, 4, 10], 20),
-    ([6, 8], 24)
+    ('72,50', 1800),
+    ('2,4,10', 20),
+    ('6,8', 24)
 ])
 def test_least_common_multiple(cli, mocker, numbers, result):
     res = cli.get(
@@ -47,7 +47,7 @@ def test_error_two_params(cli, mocker):
         f'{BASE_URL}/maths/',
         {
             'number': 1,
-            'numbers': [1, 2, 3],
+            'numbers': '1,2,3',
         },
         format='json'
     )
