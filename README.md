@@ -12,6 +12,9 @@ Para correr los test hay que ejecutar:
 - `$ make docker-test`
 
 ## EndPoints
+### Swagger
+- Vista de la documetación: `http://localhost:8000/swagger/`
+
 ### Apartado de chistes
 -COMPLETAR-
 
