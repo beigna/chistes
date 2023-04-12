@@ -13,7 +13,7 @@ Para correr los test hay que ejecutar:
 
 ## EndPoints
 ### Swagger
-- Documetación: `http://localhost:8000/swagger/`
+- Documentación: `http://localhost:8000/swagger/`
 
 ### Apartado de chistes
 -COMPLETAR-
@@ -25,4 +25,4 @@ Para correr los test hay que ejecutar:
 ## Detalles constructivos
 
 Realicé tests de los endpoint pytest parametrizados.
-Por cuestiones de tiempo realicé la validación dentro de las views en lugar de usar Sarializers de DRF.
+Por cuestiones de tiempo realicé la validación dentro de las views en lugar de usar Serializers de DRF.
