@@ -26,7 +26,6 @@ class MathAPI(APIView):
     @swagger_auto_schema(
         responses={
             200: '{"result": 56}',
-            400: 'Error description'
         },
         manual_parameters=[number_doc, numbers_doc],
     )

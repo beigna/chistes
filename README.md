@@ -13,13 +13,13 @@ Para correr los test hay que ejecutar:
 
 ## EndPoints
 ### Swagger
-- Vista de la documetación: `http://localhost:8000/swagger/`
+- Documetación: `http://localhost:8000/swagger/`
 
 ### Apartado de chistes
 -COMPLETAR-
 
 ### Apartado matemático
-- Mínimo común múltiplo: `http://localhost:8000/api/v1/maths/?numbers=2&numbers=4&numbers=10`
+- Mínimo común múltiplo: `http://localhost:8000/api/v1/maths/?numbers=2,4,10`
 - N+1: `http://localhost:8000/api/v1/maths/?number=2`
 
 ## Detalles constructivos
