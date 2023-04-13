@@ -11,12 +11,16 @@ Tras clonar el repositorio hay una serie de comandos a ejecutar para su funciona
 Para correr los test hay que ejecutar:
 - `$ make docker-test`
 
+Ejecutar `$ make` para ver el resto de las opciones.
+
 ## EndPoints
 ### Swagger
 - Documentación: `http://localhost:8000/swagger/`
 
 ### Apartado de chistes
--COMPLETAR-
+- Chistes Random: `http://localhost:8000/api/v1/jokes/random/`
+- Chistes de Chuck: `http://localhost:8000/api/v1/jokes/random/Chuck/`
+- Chistes de Dad: `http://localhost:8000/api/v1/jokes/random/Dad/`
 
 ### Apartado matemático
 - Mínimo común múltiplo: `http://localhost:8000/api/v1/maths/?numbers=2,4,10`
@@ -24,5 +28,4 @@ Para correr los test hay que ejecutar:
 
 ## Detalles constructivos
 
-Realicé tests de los endpoint pytest parametrizados.
-Por cuestiones de tiempo realicé la validación dentro de las views en lugar de usar Serializers de DRF.
+El projecto está armado para ser ejecutado con Docker, tanto para probarlo como para continuar su desarollo (el Dockerfile.dev que adjunto no está pensado para producción). Por otro lado utilizo un esquema modular en el projecto Django propiamente dicho, con requerimientos en cascada según dónde se vaya a utilizar (producción, testing o desarrollo local).
